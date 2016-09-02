@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="c_accent">#325C80</color>
+    <color name="floating_action_button_bg">@color/c_accent</color>
+    <color name="floating_action_button_pressed_bg">#212121</color>
+    <color name="fancybtmdefault">#7AB800</color>
+    <color name="fancybtmfocus">#9bd823</color>
+    <color name="colorHight">#B6B6B6</color>
+    <color name="white">#FFFFFF</color>
+</resources>

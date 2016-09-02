@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/addlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:adjustViewBounds="true"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/mytoolbar"
+        layout="@layout/toolbar">
+
+    </include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="9.5"
+            android:weightSum="10">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:elevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_weight="9"
+                        android:ems="25"
+                        android:maxLines="100"
+                        android:scrollHorizontally="true" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/image_recycler"
+                            android:layout_width="wrap_content"
+                            android:layout_height="120dp"
+                            android:orientation="horizontal"></android.support.v7.widget.RecyclerView>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avi"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            app:indicatorColor="@color/colorAccent"
+            app:indicatorName="LineScalePartyIndicator"
+
+            />
+        <com.roughike.bottombar.BottomBar
+            android:id="@+id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            app:bb_tabXmlResource="@xml/bottombar_tabs" />
+
+        <LinearLayout
+            android:id="@+id/voice_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            android:layout_above="@id/bottomBar"
+            android:visibility="gone"
+            android:weightSum="10">
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                style="@style/fancybuttomstyle2"
+                fancy:fb_defaultColor="#7ab800"
+                fancy:fb_focusColor="#9bd823"
+                android:id="@+id/button"
+                fancy:fb_radius="5dp"
+                fancy:fb_iconResource="@drawable/microphone" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                style="@style/fancybuttomstyle2"
+                fancy:fb_defaultColor="#7ab800"
+                fancy:fb_focusColor="#9bd823"
+                android:id="@+id/voiceplay"
+                fancy:fb_radius="5dp"
+                fancy:fb_iconResource="@drawable/play" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                style="@style/fancybuttomstyle2"
+                fancy:fb_defaultColor="#7ab800"
+                fancy:fb_focusColor="#9bd823"
+                android:id="@+id/voicestop"
+                fancy:fb_radius="5dp"
+                fancy:fb_iconResource="@drawable/stop" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                style="@style/fancybuttomstyle2"
+                fancy:fb_defaultColor="#7ab800"
+                fancy:fb_focusColor="#9bd823"
+                android:id="@+id/voicedelete"
+                fancy:fb_radius="5dp"
+                fancy:fb_iconResource="@drawable/delete" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/typeselect_layout"
+            android:layout_width="match_parent"
+            android:layout_above="@id/bottomBar"
+            android:layout_height="30dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="10">
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                style="@style/fancybuttomstyle"
+                fancy:fb_defaultColor="#7ab800"
+                fancy:fb_focusColor="#9bd823"
+                android:id="@+id/fancybtn1"
+                fancy:fb_radius="5dp"
+                fancy:fb_iconResource="@drawable/home" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                style="@style/fancybuttomstyle"
+                fancy:fb_defaultColor="#7ab800"
+                fancy:fb_focusColor="#9bd823"
+                fancy:fb_radius="5dp"
+                android:id="@+id/fancybtn2"
+                fancy:fb_iconResource="@drawable/work" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                style="@style/fancybuttomstyle"
+                fancy:fb_defaultColor="#7ab800"
+                fancy:fb_focusColor="#9bd823"
+                fancy:fb_radius="5dp"
+                android:id="@+id/fancybtn3"
+                fancy:fb_iconResource="@drawable/cat"
+                />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                style="@style/fancybuttomstyle"
+                fancy:fb_defaultColor="#7ab800"
+                fancy:fb_focusColor="#9bd823"
+                fancy:fb_radius="5dp"
+                android:id="@+id/fancybtn4"
+                fancy:fb_iconResource="@drawable/question"
+                />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                style="@style/fancybuttomstyle"
+                fancy:fb_defaultColor="#7ab800"
+                fancy:fb_focusColor="#9bd823"
+                fancy:fb_radius="5dp"
+                android:id="@+id/fancybtn5"
+                fancy:fb_iconResource="@drawable/important"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/alarmpick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/bottomBar"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:id="@+id/timepick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foreground="@drawable/card_foreground"
+                    android:clickable="true"
+                    android:text="05:00"
+                    android:textSize="35dp"/>
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/datepick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foreground="@drawable/card_foreground"
+                    android:clickable="true"
+                    android:text="8月25日"
+                    android:textSize="35dp"/>
+                <Switch
+                    android:id="@+id/pickswitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="9"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="  重复"/>
+                <TextView
+                    android:id="@+id/mondaypick"
+                    style="@style/daypickerstyle"
+                    android:text="一"
+                     />
+                <TextView
+                    style="@style/daypickerstyle"
+                    android:id="@+id/tuesdaypick"
+                    android:text="二"/>
+                <TextView
+                    style="@style/daypickerstyle"
+                    android:id="@+id/wednsdaypick"
+                    android:text="三"/>
+                <TextView
+                    style="@style/daypickerstyle"
+                    android:id="@+id/thursdaydaypick"
+
+                    android:text="四"/>
+                <TextView
+                    style="@style/daypickerstyle"
+                    android:id="@+id/fridaypick"
+
+                    android:text="五"/>
+                <TextView
+                    style="@style/daypickerstyle"
+
+                    android:id="@+id/saturdaypick"
+
+                    android:text="六"/>
+                <TextView
+                    style="@style/daypickerstyle"
+                    android:id="@+id/sundaypick"
+
+                    android:text="日"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">南瓜便签</string>
+    <string name="action_setting">南瓜便签</string>
+    <string name="type_work">工作</string>
+    <string name="type_life">生活</string>
+    <string name="type_pet">宠物</string>
+    <string name="type_add">类别</string>
+
+</resources>

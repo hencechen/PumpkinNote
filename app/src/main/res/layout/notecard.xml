@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/card_margin"
+        android:layout_marginLeft="@dimen/card_margin"
+        android:layout_marginRight="@dimen/card_margin"
+        android:layout_marginTop="@dimen/card_margin"
+        card_view:background="@drawable/card_foreground"
+        android:clickable="true"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp"
+        card_view:cardElevation="2dp">
+
+        <com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swap_item"
+            android:layout_width="match_parent"
+            android:foreground="@drawable/card_foreground"
+            android:layout_height="wrap_content"
+
+            >
+
+            <LinearLayout
+                android:id="@+id/swap_btm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#66ddff00"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/notelist_delete"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/delete" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_margin"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:layout_marginRight="@dimen/card_margin"
+                android:layout_marginTop="@dimen/card_margin"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/card_margin"
+                    android:layout_marginLeft="@dimen/card_margin"
+                    android:layout_marginTop="@dimen/card_margin"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/notelist_type"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:src="@drawable/home" />
+
+                    <TextView
+                        android:id="@+id/notelist_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="2016/08/10 14:00"
+                        android:textSize="10dp" />
+
+                    <ImageView
+                        android:id="@+id/voice_flag"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:visibility="gone"
+                        android:layout_toLeftOf="@id/notelist_date"
+                        android:src="@drawable/microphone" />
+
+                    <ImageView
+                        android:id="@+id/img_flag"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:visibility="gone"
+                        android:layout_toLeftOf="@id/voice_flag"
+                        android:src="@drawable/image" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/notelist_summ"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="第一条"
+                    android:textSize="20dp" />
+
+
+            </LinearLayout>
+
+
+        </com.daimajia.swipe.SwipeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+

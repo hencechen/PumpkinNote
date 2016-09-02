@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/menu_group_1">
+        <item
+            android:id="@+id/menu_all"
+            android:icon="@drawable/notes"
+            android:title="全部" />
+        <item
+            android:id="@+id/menu_home"
+            android:icon="@drawable/home"
+            android:title="生活" />
+        <item
+            android:id="@+id/menu_work"
+            android:icon="@drawable/work"
+            android:title="工作" />
+        <item
+            android:id="@+id/menu_pet"
+            android:icon="@drawable/cat"
+            android:title="宠物" />
+        <item
+            android:id="@+id/menu_unknow"
+            android:icon="@drawable/question"
+            android:title="未知" />
+        <item
+            android:id="@+id/menu_important"
+            android:icon="@drawable/important"
+            android:title="重要" />
+        </group>
+    <group android:id="@+id/menu_group_2">
+        <item
+            android:id="@+id/menu_update"
+            android:icon="@drawable/update"
+            android:title="检查更新" />
+    </group>
+
+</menu>

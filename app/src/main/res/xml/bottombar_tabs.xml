@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<tabs xmlns:android="http://schemas.android.com/apk/res/android">
+    <tab
+        id="@+id/btm1"
+        title="Favorites"
+        android:icon="@drawable/question" />
+    <tab
+        id="@+id/btm2"
+        title="Nearby"
+        android:icon="@drawable/photo" />
+    <tab
+        id="@+id/btm3"
+        title="Friends"
+        android:icon="@drawable/camero" />
+    <tab
+        id="@+id/btm4"
+        title="Friends"
+        android:icon="@drawable/voice" />
+</tabs>

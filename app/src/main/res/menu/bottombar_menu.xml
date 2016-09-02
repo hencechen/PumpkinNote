@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottomBarItemType"
+        android:icon="@drawable/question"
+        android:title=" " />
+    <item
+        android:id="@+id/bottomBarItemPhoto"
+        android:icon="@drawable/photo"
+        android:title=" " />
+    <item
+        android:id="@+id/bottomBarItemOne"
+        android:icon="@drawable/camero"
+        android:title=" " />
+    <item
+        android:id="@+id/bottomBarItemTwo"
+        android:icon="@drawable/voice"
+        android:title=" " />
+    <item
+        android:id="@+id/bottomBarItemThree"
+        android:icon="@drawable/alarm"
+        android:title=" " />
+</menu>
